@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <header class="nav">
+        <a class="brand" href="index.html">Task Management</a>
+        <nav class="nav-links">
+          <a href="login.html">Login</a>
+        </nav>
+      </header>
+      <div class="card">
+        <h1>Create account</h1>
+        <p class="sub">New accounts are created with the <strong>user</strong> role.</p>
+        <div id="msg" class="message" hidden></div>
+        <form id="form">
+          <label for="username">Username</label>
+          <input id="username" name="username" autocomplete="username" required />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+          <label for="password">Password (min 8 characters)</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="new-password"
+            required
+            minlength="8"
+          />
+          <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <hr class="sep" />
+        <p class="sub" style="margin: 0">Already have an account? <a href="login.html">Log in</a></p>
+      </div>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>

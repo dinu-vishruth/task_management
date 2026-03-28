@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <header class="nav">
+        <a class="brand" href="index.html">Task Management</a>
+        <nav class="nav-links">
+          <a href="register.html">Register</a>
+        </nav>
+      </header>
+      <div class="card">
+        <h1>Log in</h1>
+        <p class="sub">Use your username and password to receive a JWT.</p>
+        <div id="msg" class="message" hidden></div>
+        <form id="form">
+          <label for="username">Username</label>
+          <input id="username" name="username" autocomplete="username" required />
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <hr class="sep" />
+        <p class="sub" style="margin: 0">No account? <a href="register.html">Register</a></p>
+      </div>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
